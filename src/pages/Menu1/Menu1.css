@@ -1,0 +1,38 @@
+.menu1-container {
+  padding: 20px;
+}
+
+/* Kotak pembungkus */
+.box {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+/* Grid untuk Chart */
+.chart-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Map container */
+.map-container {
+  height: 400px;
+  width: 100%;
+}
+
+/* Title Table kiri */
+.table-title {
+  text-align: left;
+}
+
+
+
+/* Jika sidebar terbuka → geser lebih ke kanan */
+body.sidebar-open .leaflet-control-zoom {
+  left: 280px !important;  /* sesuaikan lebar sidebar kamu */
+}
+
+

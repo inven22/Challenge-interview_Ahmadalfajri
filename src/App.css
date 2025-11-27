@@ -1,38 +1,80 @@
 .App {
-  text-align: center;
+  text-align: center; /* Mengatur teks di dalam elemen dengan kelas App agar rata tengah */
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 40vmin; /* Mengatur tinggi logo sesuai viewport minimum */
+  pointer-events: none; /* Menonaktifkan interaksi mouse pada logo */
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 20s linear; /* Animasi putar logo tanpa henti selama 20 detik */
   }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #282c34; /* Warna latar belakang header */
+  min-height: 100vh; /* Minimal tinggi 100% viewport */
+  display: flex; /* Menggunakan flexbox */
+  flex-direction: column; /* Menyusun elemen secara vertikal */
+  align-items: center; /* Mengatur item di tengah secara horizontal */
+  justify-content: center; /* Mengatur item di tengah secara vertikal */
+  font-size: calc(10px + 2vmin); /* Ukuran font responsif */
+  color: white; /* Warna teks putih */
 }
 
 .App-link {
-  color: #61dafb;
+  color: #61dafb; /* Warna link */
 }
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0deg); /* Mulai rotasi dari 0 derajat */
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(360deg); /* Selesai rotasi pada 360 derajat */
   }
 }
+
+
+
+
+
+/* src/App.css atau index.css */
+.table-wrapper-scroll {
+  overflow-x: auto;
+  width: 100%;
+}
+
+
+  /* seperti mockup */
+  
+  
+.leaflet-container { width: 100%; height: 400px; }
+/* Geser tombol zoom (+/-) ke kiri */
+/* Default: PC/Laptop — tidak berubah */
+/* Default: posisi normal */
+.leaflet-control-container {
+  z-index: 400; /* bawaan Leaflet */
+}
+
+/* Jika sidebar terbuka di MOBILE: tombol zoom berada di belakang */ 
+/* MOBILE: geser map ketika sidebar open */
+@media (max-width: 768px) {
+  body.sidebar-open .map-container {
+    margin-left: 260px !important; /* sesuai lebar sidebar kamu */
+    transition: margin-left 0.3s ease;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
