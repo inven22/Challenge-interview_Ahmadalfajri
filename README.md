@@ -1,3 +1,24 @@
+
+## Struktur file project
+
+1.	Folder layout, Folder ini menyimpan file layouting dari project aplikasi tantangan interview didalam nya terdapat file yang berisi code, Header,Side bar, dan ada juga folder mainlayout yang berfungsi  sebagai kerangka utama tampilan aplikasi, tempat Sidebar, Header, dan konten halaman ditampilkan secara konsisten.
+2.	Folder api, folder yang digunakan untuk menyimpan file-file berisi konfigurasi URL API serta fungsi pemanggilan API menggunakan axios. Folder ini membantu agar semua request ke backend lebih rapi, terstruktur, mudah digunakan kembali, dan tidak perlu menulis URL API berulang kali di setiap komponen.
+3.	Folder pages, folder ini menyimpan file code terkait page konten halaman Menu1 yang berisi chart map koordinat kota Jakarta dan bandung, bar chart,line chart dan juga data table postingan yang memuat Userid,id,title.
+   
+## Konfigurasi dan clone project from github 
+
+-	Step 1, akses link Repository github inven22/Challenge-interview_Ahmadalfajri: Tantangan interview agora techno solution.
+-	Step 2, salin url Repository github pada menu Local.
+-	Step 3, setelah disalin buat folder baru pada file Explorer.
+-	Step 4, setelah folder dibuat lalu masuk kedalam folder tersebut klik kanan lalu. pilih git bash, jika git bash belum tersedia harus download Git terlebih dahulu pada computer/laptop anda.
+-	Step 5, setelah berhasil mengakses cli git, inputkan perintah “git clone {link url repository yang telah disalin}”.
+contoh : git clone  https://github.com/inven22/blasting_new.git.
+-	Step 6, setelah berhasil di clone lalu akses folder project yang telah di clone atau bisa dengan perindah “cd {nama_folder}”.
+-	Step 7, setelah berada pada folder project lalu inputkan perintah “npm install” untuk download depencies dan library project .
+-	Step 8, setelah npm install dinyatakan berhasil lalu inputkan perintah “npm start” untuk memulai react server local.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
