@@ -61,9 +61,6 @@
   }
 }
 
-/* ============================================================
-   TAMBAHAN RESPONSIVE BARU (TANPA MENGUBAH CODE ASLI)
-   ============================================================ */
 
 /* 1) TABLET (768–991px) */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -110,9 +107,7 @@
   }
 }
 
-/* ============================================================
-   FIX MOBILE — FINAL VERSION
-   ============================================================ */
+/* FIX MOBILE — FINAL VERSION
 
 /* 1️⃣ Sidebar harus berada di atas konten */
 @media (max-width: 991px) {
