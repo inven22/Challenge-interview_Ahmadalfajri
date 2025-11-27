@@ -2,7 +2,15 @@
   background-color: #ffffff;
   padding: 28px 24px;
   border-bottom: 1px solid #e6e6e6;
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 900;
+  font-size: 20px;
   color: #000000;
+}
+
+/* ----- LEBIH TEBAL DI MOBILE ----- */
+@media (max-width: 768px) {
+  .header-container {
+    font-weight: 900;  /* maksimal */
+    font-size: 22px;   /* diperbesar untuk kesan lebih tebal lagi */
+  }
 }

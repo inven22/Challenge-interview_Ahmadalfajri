@@ -6,6 +6,10 @@ import "./MainLayout.css"; // ← CSS dipisahkan
 
 const MainLayout = ({ role, children }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const toggleSidebar = () => {
+  document.body.classList.toggle("sidebar-open");
+  setSidebarOpen(!sidebarOpen);
+};
 
   return (
     <div className="layout-container">
@@ -29,7 +33,7 @@ const MainLayout = ({ role, children }) => {
       {/* Main content */}
       <div className="main-content">
         <Header
-          role={role}
+         
           onToggleSidebar={() => setSidebarOpen(!sidebarOpen)}
         />
         <main className="content">{children}</main>
